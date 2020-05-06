@@ -1,20 +1,19 @@
-From 7c815e105debcf4fbad2a70753f8b70b7ad118ba Mon Sep 17 00:00:00 2001
+From 5fe43fee83225dbec7336fa4094366891fbf910a Mon Sep 17 00:00:00 2001
 From: manthan chauhan <manthanchauhan913@gmail.com>
-Date: Wed, 6 May 2020 14:22:46 +0530
+Date: Wed, 6 May 2020 14:32:52 +0530
 Subject: [PATCH] Task 1 (with bonus task)
 
 ---
  .gitignore | 1 +
  1 file changed, 1 insertion(+)
- create mode 100644 .gitignore
 
 diff --git a/.gitignore b/.gitignore
-new file mode 100644
-index 0000000..9f11b75
---- /dev/null
+index 9f11b75..331561b 100644
+--- a/.gitignore
 +++ b/.gitignore
-@@ -0,0 +1 @@
-+.idea/
+@@ -1 +1,2 @@
+ .idea/
++**/*.patch
 -- 
 2.25.1
 

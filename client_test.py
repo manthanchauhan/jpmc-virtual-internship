@@ -14,8 +14,10 @@ class ClientTest(unittest.TestCase):
       expected_price = (quote['top_bid']['price'] + quote['top_ask']['price'])/2
       self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'], expected_price))
 
-  def test_getRatio(self):
+  def test_getRatio_priceB_non_zero(self):
     self.assertEqual(getRatio(123.77, 116.78), 123.77/116.78)
+
+  def test_getRatio_priceB_zero(self):
     self.assertEqual(getRatio(124.11, 0), None)
 
   """ ------------ Add more unit tests ------------ """
